@@ -1,17 +1,19 @@
 {
   "name": "the-view",
-  "version": "1.0.0",
-  "description": "Team: the VIEW - BRASPER MVP",
+  "version": "2.0.0",
+  "description": "Team: the VIEW - BRASPER back office (Firebase project aibrasper)",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "grant-staff": "node scripts/grant-staff.mjs",
+    "deploy": "firebase deploy --only hosting:view --project aibrasper"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.3.0",
-    "multer": "^2.4.0"
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "firebase-admin": "^13.0.0"
   },
   "engines": {
     "node": ">=22.13"

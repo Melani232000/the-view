@@ -4,3 +4,9 @@ node_modules/
 !.env.example
 dist/
 build/
+# Firebase / credentials
+.firebase/
+firebase-debug.log*
+serviceAccount*.json
+*-adminsdk-*.json
+.claude/
